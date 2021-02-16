@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form onsubmit="onsubmitFunc()" action="https://www.shipgigventures.com/">
+      <p>on submit event in javascript</p></br>
+      <label for="txt">Enter Your Name</label></br>
+      <input id="name_inp" type="text" name="uname"></br></br>
+      <input type="submit">
+    </form>
+    <script>
+      function onsubmitFunc(){
+        // var sub = document.getElementById('fname').value;
+        // alert("Hello " + sub + "! You will now be redirected to www.w3Schools.com");
+        username = document.forms[0].name_inp.value;
+        alert("Hi " + username + " ! Now you will be redirected to fb");
+        // alert("hi");
+      }
+    </script>
+  </body>
+</html>

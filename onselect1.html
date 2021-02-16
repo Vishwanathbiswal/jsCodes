@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>On Blur Event in JS</p>
+    <label for="text">Enter some text here</label></br>
+    <input type="text" name="input" id="inp_box" value="Hello JavaScript"
+    onselect="onselectFunc()">
+    <p id="blank"></p>
+    <script>
+      function onselectFunc(){
+        var select = document.getElementById('blank').innerHTML =
+        "You have selected some text";
+      }
+    </script>
+  </body>
+</html>

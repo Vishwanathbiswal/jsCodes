@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input id="txt_inp" type="text" onkeyup="keyupFunc()">
+    <script>
+      function keyupFunc(){
+        var act = document.getElementById('txt_inp');
+        act.value = act.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>

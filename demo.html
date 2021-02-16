@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Tuts</title>
+    </head>
+    <body>
+        <h3>What's the time now ?</h3>
+        <button type="button" onclick="document.getElementById('showdate').innerHTML = Date()">
+        Click here to show the date and time</button>
+        <p id="showdate"></p>
+        <h3 id="chng_text">JS Tutorial</h3>
+        <button type="button" onclick="document.getElementById('chng_text').innerHTML = 'JavaScript Tutorial'">
+        Change Text</button>
+        <h3 id="concat_text">JS is a ..</h3>
+        <button type="button" onclick="document.getElementById('concat_text').innerHTML =
+        document.getElementById('concat_text').innerHTML + '.. general purpose programming language' ">
+        Concatenate Something</button>
+        <h3 id="inc_font">JS Tutorial</h3>
+        <button type="button" onclick="document.getElementById('inc_font').style.fontSize='30px'">
+        Increase Font Size</button>
+        <p class="hide">bugs bugs bugs bugs</p>
+        <p class="hide">bugs bugs bugs bugs</p>
+        <p class="hide">bugs bugs bugs bugs</p>
+        <button type="button" onclick="document.getElementsByClassName('hide').style.display = 'none'">
+        Click Here To Hide The Above bug Lines</button>
+    </body>
+</html>

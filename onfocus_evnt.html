@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <label for="inputtext">Enter some text</label><br>
+    <input type="text" name="string" id="text_inp" onfocus="onfocusFunc()"><br>
+    <script>
+      function onfocusFunc(){
+        var focus = document.getElementById("text_inp");
+        focus.style.backgroundColor = "yellow";
+      }
+    </script>
+  </body>
+</html>

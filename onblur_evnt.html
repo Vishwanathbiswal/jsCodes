@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <label for="name">Enter any string</label><br>
+    <input type="text" name="input" id="inputField" ><br><br>
+    <button type="submit" id="btn" onblur="blurFunction()">Click Here</button><br>
+    <script>
+      function blurFunction(){
+        var blr = document.getElementById('inputField');
+        blr.value = blr.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Tuts</title>
+    </head>
+    <body>
+        <h3>What's the time now ?</h3>
+        <button type="button" id="btn">Click here to show the date and time</button>
+        <p id="showdate"></p>
+        <script>
+            // alert("Welcome to the JS World");
+            // console.log("Welcome to the JS World");
+            // document.write("Welcome to the JS World");
+            document.getElementById("btn").onclick = function(){
+                document.getElementById("showdate").innerHTML = Date();
+            }
+        </script>
+    </body>
+</html>

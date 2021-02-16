@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Task 1</title>
+  </head>
+  <body>
+    <form name="myForm" action="">
+      <label for ="inputtext">Enter a String</label><br>
+      <input id="inputid" type="text" name="input"><br><br>
+      <button type="submit" id="btn" onclick="starInput(document.myForm.input)">
+      Click Here to see the output</button>
+      <p id="blank"></p>
+    </form>
+    <script>
+      function starInput(inputtxt){
+           var letters = /^[A-Za-z]+$/;
+           if(inputtxt.value == ""){
+               alert('Input cannot be blank');
+               return true;
+           }
+           else if(inputtxt.value.match(letters)){
+               alert('Input have accepted');
+               document.getElementById('blank').innerHTML =
+               document.getElementById('input').value.split("").reverse().join("*").toUpperCase();
+               // document.getElementById('input').value.split("").reverse().join("");
+           }
+           else{
+               alert('Please input alphabet characters only');
+               return false;
+           }
+       }
+    </script>
+  </body>
+</html>

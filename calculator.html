@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mini Calculator</title>
+    <style>
+      input[type=text] {
+        maxlength: 4px;
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+        border: 2px solid red;
+        border-radius: 4px;
+      }
+      #maindivision{
+        text-align: center;
+      }
+      h1{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mini Calculator</h1>
+    <form>
+      <div id="maindivision">
+          <div id="getinput">
+            <input id="fnum" type="text" maxlength="5">
+            <input id="snum" type="text" maxlength="5">
+          </div></br>
+          <div id="operations">
+            <input id="add_btn" type="button" value="Sum" onclick="addition()">
+            <input id="sub_btn" type="button" value="Sub" onclick="subtraction()">
+            <input id="mul_btn" type="button" value="Mul" onclick="muliplication()">
+            <input id="div_btn" type="button" value="Div" onclick="division()">
+          </div></br>
+          <div id="output">
+            <input id="result" type="text">
+          </div>
+       </form>
+     </div>
+   <script>
+      function addition(){
+        var num1 = document.getElementById('fnum').value;
+        var num2 = document.getElementById('snum').value;
+        var res = parseInt(num1) + parseInt(num2);
+        // alert("Addition of " + num1 + " and " + num2 + " is : " + res);
+        document.getElementById('result').value = res;
+      }
+      function subtraction(){
+        var num1 = document.getElementById('fnum').value;
+        var num2 = document.getElementById('snum').value;
+        var res = num1 - num2;
+        // alert("Subtraction");
+        // alert("Difference of " + num1 + " and " + num2 + " is : " + res);
+        document.getElementById('result').value = res;
+      }
+      function muliplication(){
+        var num1 = document.getElementById('fnum').value;
+        var num2 = document.getElementById('snum').value;
+        var res = num1 * num2;
+        // alert("Multiplication");
+        // alert("Multiplication of " + num1 + " and " + num2 + " is : " + res);
+        document.getElementById('result').value = res;
+      }
+      function division(){
+        var num1 = document.getElementById('fnum').value;
+        var num2 = document.getElementById('snum').value;
+        var res = num1 / num2;
+        // alert("Division");
+        // alert("Division of " + num1 + " and " + num2 + " is : " + res);
+        document.getElementById('result').value = res;
+      }
+   </script>
+  </body>
+</html>
